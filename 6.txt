@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Fri Jan  8 15:10:38 2021 as: nmap -p21,22,23,3389,445,10019,8080,135,1080 -iL ip.txt -oG port.txt
+Host: 192.168.184.1 ()	Status: Up
+Host: 192.168.184.1 ()	Ports: 21/closed/tcp//ftp///, 22/closed/tcp//ssh///, 23/closed/tcp//telnet///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 1080/open/tcp//socks///, 3389/closed/tcp//ms-wbt-server///, 8080/closed/tcp//http-proxy///, 10019/closed/tcp//unknown///
+Host: 192.168.1.5 ()	Status: Up
+Host: 192.168.1.5 ()	Ports: 21/open/tcp//ftp///, 22/filtered/tcp//ssh///, 23/filtered/tcp//telnet///, 135/filtered/tcp//msrpc///, 445/filtered/tcp//microsoft-ds///, 1080/filtered/tcp//socks///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 10019/filtered/tcp//unknown///
+Host: 192.168.1.9 ()	Status: Up
+Host: 192.168.1.9 ()	Ports: 21/filtered/tcp//ftp///, 22/filtered/tcp//ssh///, 23/filtered/tcp//telnet///, 135/filtered/tcp//msrpc///, 445/filtered/tcp//microsoft-ds///, 1080/filtered/tcp//socks///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 10019/filtered/tcp//unknown///
+Host: 192.168.1.20 ()	Status: Up
+Host: 192.168.1.20 ()	Ports: 21/open/tcp//ftp///, 22/filtered/tcp//ssh///, 23/filtered/tcp//telnet///, 135/filtered/tcp//msrpc///, 445/filtered/tcp//microsoft-ds///, 1080/filtered/tcp//socks///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 10019/filtered/tcp//unknown///
+Host: 192.168.1.32 ()	Status: Up
+Host: 192.168.1.32 ()	Ports: 21/open/tcp//ftp///, 22/filtered/tcp//ssh///, 23/filtered/tcp//telnet///, 135/filtered/tcp//msrpc///, 445/filtered/tcp//microsoft-ds///, 1080/filtered/tcp//socks///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 10019/filtered/tcp//unknown///
+# Nmap done at Fri Jan  8 15:10:40 2021 -- 8 IP addresses (5 hosts up) scanned in 2.15 seconds
