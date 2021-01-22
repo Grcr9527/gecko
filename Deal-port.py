@@ -1,6 +1,12 @@
 import pandas as pd
 import numpy as np
 
+'''
+使用说明:通过NMAP弱口令端口扫描,产生的文件 XXX.gnmap,改名为6.txt,与此脚本存放同一目录下,通过python3 运行
+注:需要有pandas,numpy模块
+'''
+
+
 with open('6.txt', 'r', encoding='utf-8') as f:
     A = f.readlines()
     B = []
@@ -39,81 +45,81 @@ for X in range(C):
     #print("格式 ：%s\t" % D[X][-1])
     for Y in range(F+1):
         if "21/open" in D[X][Y]:
-            with open("21端口-IP"+ ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+            with open("21端口"+ ".txt", "a") as IP:
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "22/open" in D[X][Y]:
             with open("22端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "23/open" in D[X][Y]:
             with open("23端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "25/open" in D[X][Y]:
             with open("25端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "110/open" in D[X][Y]:
             with open("110端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "143/open" in D[X][Y]:
             with open("143端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "445/open" in D[X][Y]:
             #print("IP ：%s\t" % D[X][0])
             with open("445端口-IP"+ ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "465/open" in D[X][Y]:
             with open("465端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "993/open" in D[X][Y]:
             with open("993端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "995/open" in D[X][Y]:
             with open("995端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "1433/open" in D[X][Y]:
             with open("1433端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "1521/open" in D[X][Y]:
             with open("1521端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "3306/open" in D[X][Y]:
             with open("3306端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "3389/open" in D[X][Y]:
             with open("3389端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "5432/open" in D[X][Y]:
             with open("5432端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "5900/open" in D[X][Y]:
             with open("5900端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "6379/open" in D[X][Y]:
             with open("6379端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "11211/open" in D[X][Y]:
             with open("11211端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         elif "27017/open" in D[X][Y]:
             with open("27017端口-IP" + ".txt", "a") as IP:
-                IP.write(''.join(D[X][0]))
+                IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         '''else:
             print("所有端口均已关闭\t" )'''
