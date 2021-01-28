@@ -44,81 +44,81 @@ with open('6.txt', 'r', encoding='utf-8') as f:
 for X in range(C):
     #print("格式 ：%s\t" % D[X][-1])
     for Y in range(F+1):
-        if "21/open" in D[X][Y]:
-            with open("21端口"+ ".txt", "a") as IP:
+        if "21/open/tcp//ftp///" in D[X][Y]:
+            with open("21端口ftp" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "22/open" in D[X][Y]:
-            with open("22端口-IP" + ".txt", "a") as IP:
+        elif "22/open/tcp//ssh///" in D[X][Y]:
+            with open("22端口ssh" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "23/open" in D[X][Y]:
-            with open("23端口-IP" + ".txt", "a") as IP:
+        elif "23/open/tcp//telnet///" in D[X][Y]:
+            with open("23端口telnet" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "25/open" in D[X][Y]:
-            with open("25端口-IP" + ".txt", "a") as IP:
+        elif "25/open/tcp//smtp///" in D[X][Y]:
+            with open("25端口smtp" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "110/open" in D[X][Y]:
-            with open("110端口-IP" + ".txt", "a") as IP:
+        elif "110/open/tcp//pop3///" in D[X][Y]:
+            with open("110端口pop3" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "143/open" in D[X][Y]:
-            with open("143端口-IP" + ".txt", "a") as IP:
+        elif "143/open/tcp//imap///" in D[X][Y]:
+            with open("143端口imap" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "445/open" in D[X][Y]:
+        elif "445/open/tcp//microsoft-ds///" in D[X][Y]:
             #print("IP ：%s\t" % D[X][0])
-            with open("445端口-IP"+ ".txt", "a") as IP:
+            with open("445端口SMB"+ ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "465/open" in D[X][Y]:
-            with open("465端口-IP" + ".txt", "a") as IP:
+        elif "465/open/tcp//smtps///" in D[X][Y]:
+            with open("465端口smtps" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "993/open" in D[X][Y]:
-            with open("993端口-IP" + ".txt", "a") as IP:
+        elif "993/open/tcp//imaps///" in D[X][Y]:
+            with open("993端口imaps" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "995/open" in D[X][Y]:
-            with open("995端口-IP" + ".txt", "a") as IP:
+        elif "995/open/tcp//pop3s///" in D[X][Y]:
+            with open("995端口pop3s" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "1433/open" in D[X][Y]:
-            with open("1433端口-IP" + ".txt", "a") as IP:
+        elif "1433/open/tcp//ms-sql-s///" in D[X][Y]:
+            with open("1433端口ms-sql-s" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "1521/open" in D[X][Y]:
-            with open("1521端口-IP" + ".txt", "a") as IP:
+        elif "1521/open/tcp//oracle///" in D[X][Y]:
+            with open("1521端口oracle" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "3306/open" in D[X][Y]:
-            with open("3306端口-IP" + ".txt", "a") as IP:
+        elif "3306/open/tcp//mysql///" in D[X][Y]:
+            with open("3306端口mysql" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "3389/open" in D[X][Y]:
-            with open("3389端口-IP" + ".txt", "a") as IP:
+        elif "3389/open/tcp//ms-wbt-server///" in D[X][Y]:
+            with open("3389端口RDP" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "5432/open" in D[X][Y]:
-            with open("5432端口-IP" + ".txt", "a") as IP:
+        elif "5432/open/tcp//postgresql///" in D[X][Y]:
+            with open("5432端口postgresql" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "5900/open" in D[X][Y]:
-            with open("5900端口-IP" + ".txt", "a") as IP:
+        elif "5900/open/tcp//vnc///" in D[X][Y]:
+            with open("5900端口vnc" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "6379/open" in D[X][Y]:
-            with open("6379端口-IP" + ".txt", "a") as IP:
+        elif "6379/open/tcp//redis///" in D[X][Y]:
+            with open("6379端口redis" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "11211/open" in D[X][Y]:
-            with open("11211端口-IP" + ".txt", "a") as IP:
+        elif "11211/open/tcp//memcache///" in D[X][Y]:
+            with open("11211端口memcache" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
-        elif "27017/open" in D[X][Y]:
-            with open("27017端口-IP" + ".txt", "a") as IP:
+        elif "27017/open/tcp//mongod///" in D[X][Y]:
+            with open("27017端口mongod" + ".txt", "a") as IP:
                 IP.write(''.join(D[X][0]).strip())
                 IP.write('\n')
         '''else:
